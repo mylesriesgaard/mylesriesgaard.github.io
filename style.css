@@ -27,7 +27,7 @@ h3 {
 }
 
 p {
-  font-size: 30px;
+  font-size: calc(12px + 0.5vw);
   line-height: 1.5;
 }
 
@@ -88,7 +88,7 @@ a {
 }
 
 .buttons {
-  font-size: calc(12px + 1.5vw);
+  font-size: calc(12px + 1vw);
   font-family: Garamond;
   padding: 0px 25px;
 }
