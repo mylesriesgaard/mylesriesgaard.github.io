@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1><a href="index.html">myles riesgaard</a></h1>
+
+    <div class="tabs">
+ 
+    <a href="about.html">about</a>
+    <a href="blog.html">blog</a>
+    <a href="music.html">music</a>
+    <a href="links.html">links</a>
+    <a href="contact.html">contact</a>
+    
+    </div>
+    
+    <div class="mainpage">
+    
+    <h2>
+     welcome to my website!
+    </h2>
+    
+    <p>
+    here you can find my work, as well as my blog and other links. enjoy! :-)
+    </p>
+       
+    </div>
+
+    <div class="footer">
+      © Myles Riesgaard
+    </div>
+    
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDAmGU65CbPNPBe233GJq2MwAdlMYnmG-0",
+        authDomain: "myles-riesgaard.firebaseapp.com",
+        projectId: "myles-riesgaard",
+        storageBucket: "myles-riesgaard.appspot.com",
+        messagingSenderId: "712997250631",
+        appId: "1:712997250631:web:09180b14b668c530b73362",
+        measurementId: "G-LJ39F4L10S"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+    <script src="src/script.js"></script>
+
+  </body>
+</html>

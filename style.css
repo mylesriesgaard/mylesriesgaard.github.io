@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #212645;
+  font-family: Garamond;
+}
+
+h1 {
+  padding: 0px 24px;
+  color: #fcfbde;
+  display: flex;
+  justify-content: center;
+  font-size: 125px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 1;
+}
+
+p {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.tabs {
+  float: center;
+  justify-content: center;
+  color: #fcfbde;
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+a {
+   text-decoration: none;
+   color: #fcfbde;
+   padding: 0px 50px 50px 50px;
+}
+
+.mainpage {
+  background: #fcfbde;
+  justify-content: center;
+  padding: 15px 30px;
+  color: #212645;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.blogpage {
+    background: #fcfbde;
+    justify-content: center;
+    padding: 7px 30px 30px 30px;
+    color: #212645;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.blogtitle {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1;
+}
+
+.guitarportrait {
+  display: block;
+  width: 400px;
+  height: 400px;
+  margin: 20px auto 0px auto;
+}
+
+.imagetext {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.buttons {
+  font-size: 30px;
+  font-family: Garamond;
+  padding: 0px 25px;
+}
+
+.footer {
+  color:#212645;
+  font-family: Garamond;
+  font-size: 15px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+  background: #fcfbde;
+}
+
+a.links {
+  color: #212645;
+  font-size: 50px;
+  font-family: Garamond;
+}
+
+a.links:link {
+  color: #212645;
+  font-size: 50px;
+  font-family: Garamond;
+}
+
+a.links:visited {
+  color: #212645;
+  font-size: 50px;
+  font-family: Garamond;
+}
+
+a.links:hover {
+  color: #212645;
+  font-size: 50px;
+  font-family: Garamond;
+}
+
+a.links:active {
+  color: #212645;
+  font-size: 50px;
+  font-family: Garamond;
+}
+
+a.music {
+  color: #212645;
+  font-size: 40px;
+  font-family: Garamond;
+}
+
+a.music:link {
+  color: #212645;
+  font-size: 40px;
+  font-family: Garamond;
+}
+
+a.music:visited {
+  color: #212645;
+  font-size: 40px;
+  font-family: Garamond;
+}
+
+a.music:hover {
+  color: #212645;
+  font-size: 40px;
+  font-family: Garamond;
+}
+
+a.music:active {
+  color: #212645;
+  font-size: 40px;
+  font-family: Garamond;
+}
