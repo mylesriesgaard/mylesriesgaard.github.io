@@ -12,7 +12,7 @@ h1 {
   color: #fcfbde;
   display: flex;
   justify-content: center;
-  font-size: 7vw;
+  font-size: calc(100px + 1.5vw);
   text-align: center;
 }
 
@@ -74,8 +74,8 @@ a {
 
 .guitarportrait {
   display: block;
-  width: 400px;
-  height: 400px;
+  width: calc(300px + 5vw);
+  height: calc(300px + 5vw);
   margin: 20px auto 0px auto;
 }
 
