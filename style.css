@@ -12,7 +12,7 @@ h1 {
   color: #fcfbde;
   display: flex;
   justify-content: center;
-  font-size: calc(100px + 1.5vw);
+  font-size: calc(75px + 1.5vw);
   text-align: center;
 }
 
@@ -73,7 +73,9 @@ a {
 }
 
 .guitarportrait {
-  display: block;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   width: calc(300px + 5vw);
   height: calc(300px + 5vw);
   margin: 20px auto 0px auto;
@@ -86,7 +88,7 @@ a {
 }
 
 .buttons {
-  font-size: 30px;
+  font-size: calc(12px + 1.5vw);
   font-family: Garamond;
   padding: 0px 25px;
 }
