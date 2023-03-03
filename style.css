@@ -43,7 +43,6 @@ p {
 a {
    text-decoration: none;
    color: #fcfbde;
-   padding: 0px 50px 50px 50px;
 }
 
 .mainpage {
@@ -106,32 +105,37 @@ a {
 
 a.links {
   color: #212645;
-  font-size: 50px;
+  font-size: calc(12px + 0.75vw);
   font-family: Garamond;
+  text-decoration-line: underline;
 }
 
 a.links:link {
   color: #212645;
-  font-size: 50px;
+  font-size: calc(12px + 0.75vw);
   font-family: Garamond;
+  text-decoration-line: underline;
 }
 
 a.links:visited {
   color: #212645;
-  font-size: 50px;
+  font-size: calc(12px + 0.75vw);
   font-family: Garamond;
+  text-decoration-line: underline;
 }
 
 a.links:hover {
   color: #212645;
-  font-size: 50px;
+  font-size: calc(12px + 0.75vw);
   font-family: Garamond;
+  text-decoration-line: underline;
 }
 
 a.links:active {
   color: #212645;
-  font-size: 50px;
+  font-size: calc(12px + 0.75vw);
   font-family: Garamond;
+  text-decoration-line: underline;
 }
 
 a.music {
@@ -162,4 +166,34 @@ a.music:active {
   color: #212645;
   font-size: 40px;
   font-family: Garamond;
+}
+
+a.tablinks {
+  text-decoration: none;
+  color: #fcfbde;
+  padding: 0px 50px 50px 50px;
+}
+
+a.tablinks:link {
+  text-decoration: none;
+  color: #fcfbde;
+  padding: 0px 50px 50px 50px;
+}
+
+a.tablinks:visited {
+  text-decoration: none;
+  color: #fcfbde;
+  padding: 0px 50px 50px 50px;
+}
+
+a.tablinks:hover {
+  text-decoration: none;
+  color: #fcfbde;
+  padding: 0px 50px 50px 50px;
+}
+
+a.tablinks:active {
+  text-decoration: none;
+  color: #fcfbde;
+  padding: 0px 50px 50px 50px;
 }
