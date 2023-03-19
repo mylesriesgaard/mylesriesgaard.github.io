@@ -197,3 +197,29 @@ a.tablinks:active {
   color: #fcfbde;
   padding: 0px 50px 50px 50px;
 }
+
+.collapsible {
+  background-color: #fcfbde;
+  font-family: Garamond;
+  color: #212645;
+  cursor: pointer;
+  font-size: calc(12px + 0.75vw);
+  text-align: left;
+  border-color: #212645;
+}
+
+.active, .collapsible:hover {
+  background-color: #212645;
+  color: #fcfbde;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #fcfbde;
+  color: #212645;
+  border-color: #212645;
+  border-style: groove;
+}
+
