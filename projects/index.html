@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myles Riesgaard</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <section id="container" class="window">
+        <!-- TITLE BAR -->
+        <header id="header" class="title-bar">
+            <div id="name" class="title-bar-text">Myles Riesgaard – Projects</div>
+            <div class="title-bar-controls">
+                <button class="button">_</button>
+                <button class="button">☐</button>
+                <button class="button">X</button>
+            </div>
+        </header>
+
+        <!-- NAVBAR -->
+        <nav id="navbar">
+            <a href="../" class="nav-btn">Home</a>
+            <a href="../about/" class="nav-btn">About</a>
+            <a href="../projects/" class="nav-btn active">Projects</a>
+            <a href="../contact/" class="nav-btn">Contact</a>
+        </nav>
+
+        <!-- FILTER BUTTONS -->
+        <section id="filterbar">
+            <button class="filter-btn" data-filter="animation">Animation</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="film">Film</button>
+            <button class="filter-btn" data-filter="programming">Programming</button>
+            <button class="filter-btn active" data-filter="all">All</button>
+        </section>
+
+        <!-- PROJECT LIST -->
+        <section id="projects-scroll">
+            <section id="projects-grid">
+
+                <!-- Portfolio Site - Ruby Schweitzer-->
+                <article class="project-card window-body" data-category="design, programming">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <a href="https://rubyschw.github.io/rubyschw/" target="_blank"><h2>Portfolio Site - Ruby Schweitzer</h2></a>
+                            <h3 class="project-category">Design</h3>
+                            <h3 class="project-category">Programming</h3>
+                            <p>A portfolio site I made for someone who works in film! Made from scratch primarily with HTML and CSS, and incorporates some JavaScript elements for slideshows and full-screen image galleries.</p>
+                        </div>
+                        <div class="project-media">
+                            <a href="https://rubyschw.github.io/rubyschw/" target="_blank"><img src="../media/portfoliosite.PNG" alt="Portfolio Site"></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Echoes of the Absent (2025) -->
+                <article class="project-card window-body" data-category="film">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h2>Echoes of the Absent (2025)</h2>
+                            <h3 class="project-category">Film</h3>
+                            <p>
+                                <strong>Composer, Boom Operator</strong><br>
+                                14:04<br><br>
+
+                                <i>Upon being invited by her bandmate, Deana journeys into the forest following the strange disappearance of her brother.</i>
+                            </p>
+                        </div>
+
+                        <div class="project-media">
+                            <iframe 
+                                src="https://www.youtube.com/embed/AVVf_28hyIM?si=FLhFpc_ojiSiVdZi"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowfullscreen
+                                loading="lazy"
+                                title="Echoes of the Absent"
+                                class="vimeo-embed">
+                            </iframe>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Digital Otrio -->
+                <article class="project-card window-body" data-category="programming">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <a href="https://github.com/mylesriesgaard/digital-otrio/" target="_blank"><h2>Digital Otrio</h2></a>
+                            <h3 class="project-category">Programming</h3>
+                            <p>Basic Python program emulating the Otrio board game</p>
+                        </div>
+                        <div class="project-media">
+                            <a href="https://github.com/mylesriesgaard/digital-otrio/" target="_blank"><img src="../media/digital_otrio.PNG" alt="Digital Otrio"></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- To-Do List -->
+                <article class="project-card window-body" data-category="design, programming" >
+                    <div class="project-content">
+                        <div class="project-text">
+                            <a href="https://github.com/mylesriesgaard/todolist/" target="_blank"><h2>To-Do List</h2></a>
+                            <h3 class="project-category">Design</h3> 
+                            <h3 class="project-category">Programming</h3>
+                            <p>Simple to-do list programmed with HTML, CSS, and JavaScript</p>
+                        </div>
+                        <div class="project-media">
+                            <a href="https://github.com/mylesriesgaard/todolist/" target="_blank"><img src="../media/todo.gif" alt="To-Do List"></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Saboteurs (2025) -->
+                <article class="project-card window-body" data-category="film">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h2>Saboteurs (2025)</h2>
+                            <h3 class="project-category">Film</h3>
+                            <p>
+                                <strong>Composer</strong><br>
+                                10:03<br><br>
+
+                                <i>When two actresses find out they’re competing for the same role, they go to dangerous measures to stop each other from getting the part.</i>
+                            </p>
+                        </div>
+
+                        <div class="project-media">
+                            <iframe 
+                                src="https://www.youtube.com/embed/Itk_-aT4PTU?si=u0LOAEF0r5Uhn3WM"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowfullscreen
+                                loading="lazy"
+                                title="Saboteurs"
+                                class="vimeo-embed">
+                            </iframe>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Animated Web Design Infographic -->
+                <article class="project-card window-body" data-category="animation, design">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h2>Animated Web Design Infographic (2025)</h2>
+                            <h3 class="project-category">Animation</h3>
+                            <h3 class="project-category">Design</h3>
+                            <p>Adobe After Effects</p>
+                        </div>
+                        <div class="project-media">
+                            <video controls>
+                                <source src="../media/infographic.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- "Famous Blue Raincoat" Musical Element Visualizer (2025) -->
+                <article class="project-card window-body" data-category="animation">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h2>"Famous Blue Raincoat" Musical Element Visualizer (2025)</h2>
+                            <h3 class="project-category">Animation</h3>
+                            <p>
+                                Adobe After Effects<br>
+                                Song by Leonard Cohen
+                            </p>
+                        </div>
+                        <div class="project-media">
+                            <video controls>
+                                <source src="../media/famous_blue_raincoat.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Dead-Weight (2024) -->
+                <article class="project-card window-body" data-category="film">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h2>Dead-Weight (2024)</h2>
+                            <h3 class="project-category">Film</h3>
+                            <p>
+                                <strong>Composer</strong><br>
+                                9:32<br><br>
+
+                                <i>When three high school graduates supply booze for the big party, they discover their cargo isn’t what they expected.</i>
+                            </p>
+                        </div>
+
+                        <div class="project-media">
+                            <iframe 
+                                src="https://www.youtube.com/embed/wirmb3VJ8xY?si=C1wFHxBM8_Q4AyFp"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowfullscreen
+                                loading="lazy"
+                                title="Dead-Weight"
+                                class="vimeo-embed">
+                            </iframe>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Do Androids Dream of Really Loud Trombones Noises? (2024) -->
+                <article class="project-card window-body" data-category="animation">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h2>Do Androids Dream of Really Loud Trombones Noises? (2024)</h2>
+                            <h3 class="project-category">Animation</h3>
+                            <p>Autodesk Maya</p>
+                        </div>
+                        <div class="project-media">
+                            <video controls>
+                                <source src="../media/robot.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- "warmpop" Visualizer (2024) -->
+                <article class="project-card window-body" data-category="animation">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h2>"warmpop" Visualizer (2024)</h2>
+                            <h3 class="project-category">Animation</h3>
+                            <p>Adobe After Effects</p>
+                        </div>
+                        <div class="project-media">
+                            <video controls>
+                                <source src="../media/visualizer.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Space Balls (2024) -->
+                <article class="project-card window-body" data-category="animation">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h2>Space Balls (2024)</h2>
+                            <h3 class="project-category">Animation</h3>
+                            <p>Autodesk Maya</p>
+                        </div>
+                        <div class="project-media">
+                            <video controls>
+                                <source src="../media/space.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+        </section>
+                <footer class="window-footer">
+            <p>© 2025 Myles Riesgaard. All Rights Reserved.</p>
+        </footer>
+
+    <!-- FILTER SCRIPT -->
+    <script>
+        const buttons = document.querySelectorAll('.filter-btn');
+        const projects = document.querySelectorAll('.project-card');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button state
+                buttons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projects.forEach(proj => {
+                    // Get all categories for this project as an array
+                    const categories = proj.getAttribute('data-category')
+                        .split(',')
+                        .map(cat => cat.trim().toLowerCase());
+
+                    // Show project if "all" is selected OR the project includes this category
+                    if (filter === 'all' || categories.includes(filter.toLowerCase())) {
+                        proj.style.display = 'block';
+                    } else {
+                        proj.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

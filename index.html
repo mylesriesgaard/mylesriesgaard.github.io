@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1><a href="index.html">myles riesgaard</a></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myles Riesgaard</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <section id="container" class="window">
+    <!-- TITLE BAR -->
+    <header id="header" class="title-bar">
+      <div id="name" class="title-bar-text">Myles Riesgaard - Home</div>
+      <div class="title-bar-controls">
+        <button class="button">_</button>
+        <button class="button">☐</button>
+        <button class="button">X</button>
+      </div>
+    </header>
 
-    <div class="tabs">
- 
-    <a class="tablinks" href="about.html">about</a>
-    <a class="tablinks" href="blog.html">blog</a>
-    <a class="tablinks" href="music.html">music</a>
-    <a class="tablinks" href="links.html">links</a>
-    <a class="tablinks" href="contact.html">contact</a>
-    
-    </div>
-    
-    <div class="mainpage">
-    
-    <h2>
-     welcome to my website!
-    </h2>
-    
-    <p>
-    here you can find my work, as well as my blog and other links. enjoy! :-)
-    </p>
-       
-    </div>
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar">
+      <a href="/" class="nav-btn active">Home</a>
+      <a href="about/" class="nav-btn">About</a>
+      <a href="projects/" class="nav-btn">Projects</a>
+      <a href="contact/" class="nav-btn">Contact</a>
+    </nav>
 
-    <div class="footer">
-      © Myles Riesgaard
-    </div>
+    <!-- MAIN CONTENT AREA -->
+    <section id="home-section">
+      <!-- LEFT: WELCOME BOX -->
+      <div id="welcome-box" class="window-body home-box">
+        <h2>Welcome!</h2>
+        <p>Welcome to my site! Feel free to look around. If it's your first time here, check out my <a href="about.html">about page</a> to learn more about me and what I do!</p>
+      </div>
 
-  </body>
+      <!-- RIGHT: RECENTLY BOX -->
+      <div id="recently-box" class="window-body home-box">
+        <h2 class="loading">Recently</h2>
+            <a href="https://rubyschw.github.io/rubyschw/" target="_blank"><img src="media/portfoliosite.PNG" style="width: 100%"></a>
+            <p>I created a professional portfolio site for someone who works in film!</p>
+      </div>
+    </section>
+    <footer class="window-footer">
+        <p>© 2025 Myles Riesgaard. All Rights Reserved.</p>
+    </footer>
+</section>
+</body>
 </html>
