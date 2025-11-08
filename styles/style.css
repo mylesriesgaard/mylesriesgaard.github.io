@@ -623,14 +623,6 @@ footer p {
         display: block;
     }
 
-    .about-text h2 {
-        font-size: 24px;
-    }
-
-    .about-text p {
-        font-size: 18px;
-    }
-
     .project-content {
         flex-direction: column;
     }
@@ -640,15 +632,6 @@ footer p {
         width: 100%;
         height: auto;
         aspect-ratio: auto;
-    }
-
-
-    .project-text h2 {
-        font-size: 20px;
-    }
-
-    .project-text p {
-        font-size: 17px;
     }
 }
 
