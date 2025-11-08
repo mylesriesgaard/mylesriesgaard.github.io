@@ -322,29 +322,53 @@
         const buttons = document.querySelectorAll('.filter-btn');
         const projects = document.querySelectorAll('.project-card');
 
+        function applyFilter(filter, updateURL = true) {
+            buttons.forEach(b => {
+                b.classList.toggle('active', b.getAttribute('data-filter') === filter);
+            });
+
+            projects.forEach(proj => {
+                const categories = proj.getAttribute('data-category')
+                    .split(',')
+                    .map(cat => cat.trim().toLowerCase());
+
+                if (filter === 'all' || categories.includes(filter)) {
+                    proj.style.display = 'block';
+                } else {
+                    proj.style.display = 'none';
+                }
+            });
+
+            if (updateURL) {
+                const url = new URL(window.location);
+                if (filter === 'all') {
+                    url.searchParams.delete('filter');
+                } else {
+                    url.searchParams.set('filter', filter);
+                }
+                window.history.pushState({ filter }, '', url);
+            }
+        }
+
+        const params = new URLSearchParams(window.location.search);
+        const filterParam = params.get('filter') ? params.get('filter').toLowerCase() : 'all';
+        const validFilters = ['animation', 'design', 'film', 'programming', 'all'];
+        const initialFilter = validFilters.includes(filterParam) ? filterParam : 'all';
+        applyFilter(initialFilter, false);
+
         buttons.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Update active button state
-                buttons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                const filter = btn.getAttribute('data-filter');
-
-                projects.forEach(proj => {
-                    // Get all categories for this project as an array
-                    const categories = proj.getAttribute('data-category')
-                        .split(',')
-                        .map(cat => cat.trim().toLowerCase());
-
-                    // Show project if "all" is selected OR the project includes this category
-                    if (filter === 'all' || categories.includes(filter.toLowerCase())) {
-                        proj.style.display = 'block';
-                    } else {
-                        proj.style.display = 'none';
-                    }
-                });
+                const filter = btn.getAttribute('data-filter').toLowerCase();
+                applyFilter(filter, true);
             });
         });
+
+        window.addEventListener('popstate', e => {
+            const filter = e.state?.filter || 'all';
+            applyFilter(filter, false);
+        });
     </script>
+
+
 </body>
 </html>
