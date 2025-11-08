@@ -26,29 +26,79 @@
   --color-titlebar-end: #1084d0;
 }
 
-/* Sunny Beige */
+/* Coffee and Beige */
 /* :root {
-  --color-bg-main: #f8f1e4;
-  --color-bg-window: #fffaf0;
-  --color-bg-panel: #f3e8d9;
-  --color-bg-hover: #faf0dd;
-  --color-bg-active: #f0e0c8;
-  --color-bg-scrollbar-track: #ffffff;
+  --color-bg-main: #d9c7b0;
+  --color-bg-window: #e4d5be;
+  --color-bg-panel: #f0e3cb;
+  --color-bg-hover: #f8f1dc;
+  --color-bg-active: #dacdb3;
+  --color-bg-scrollbar-track: #c7b69a;
 
-  --color-text-main: #2c2c2c;
-  --color-text-muted: #7a6e5a;
-  --color-text-link: #0055aa;
+  --color-text-main: #362b20;
+  --color-text-muted: #655344;
+  --color-text-link: #8f7158;
   --color-text-link-hover: #000000;
   --color-text-inverse: #ffffff;
-  --color-text-category: #5a4a3a;
+  --color-text-category: #4a3b2e;
+
+  --color-border-light: #f1e0c2;
+  --color-border-medium: #b89e7e;
+  --color-border-dark: #42321e;
+  --color-border-highlight: #fff3d9;
+
+  --color-titlebar-start: #a77a50;
+  --color-titlebar-end: #d4b48b;
+} */
+
+/* Mocha */
+/* :root {
+  --color-bg-main: #b39b84;
+  --color-bg-window: #c3af98;
+  --color-bg-panel: #d8c7b2;
+  --color-bg-hover: #ede1d2;
+  --color-bg-active: #b9a088;
+  --color-bg-scrollbar-track: #ffffff;
+
+  --color-text-main: #2f1f13;
+  --color-text-muted: #604a36;
+  --color-text-link: #8c5638;
+  --color-text-link-hover: #000000;
+  --color-text-inverse: #ffffff;
+  --color-text-category: #402b1a;
 
   --color-border-light: #ffffff;
-  --color-border-medium: #c0b8a0;
-  --color-border-dark: #7a6e5a;
+  --color-border-medium: #bda68f;
+  --color-border-dark: #705642;
   --color-border-highlight: #fff;
 
-  --color-titlebar-start: #c69c6d;
-  --color-titlebar-end: #dcb88a;
+  --color-titlebar-start: #8c6a4a;
+  --color-titlebar-end: #c5a37f;
+} */
+
+/* Sticky Note */
+/* :root {
+  --color-bg-main: #fef3c7;
+  --color-bg-window: #fff8d9;
+  --color-bg-panel: #fffce8;
+  --color-bg-hover: #fffef5;
+  --color-bg-active: #fef5b8;
+  --color-bg-scrollbar-track: #f8edb5;
+
+  --color-text-main: #5a482e;
+  --color-text-muted: #8a7153;
+  --color-text-link: #b78c55;
+  --color-text-link-hover: #000000;
+  --color-text-inverse: #ffffff;
+  --color-text-category: #765f42;
+
+  --color-border-light: #fff9d8;
+  --color-border-medium: #d9c187;
+  --color-border-dark: #5b482f;
+  --color-border-highlight: #fffcd3;
+
+  --color-titlebar-start: #d4b266;
+  --color-titlebar-end: #f2d298;
 } */
 
 /* Sky Blue
@@ -174,6 +224,31 @@
 
   --color-titlebar-start: #00997a;
   --color-titlebar-end: #33e2b8;
+} */
+
+/* Tropical 2 */
+/* :root {
+  --color-bg-main: #ff7e7e;
+  --color-bg-window: #ffa0a0;
+  --color-bg-panel: #ffc0c0;
+  --color-bg-hover: #ffe0e0;
+  --color-bg-active: #ff4c4c;
+  --color-bg-scrollbar-track: #ff9999;
+
+  --color-text-main: #1e2a6f;
+  --color-text-muted: #4955a0;
+  --color-text-link: #ffdd66;
+  --color-text-link-hover: #fff4a0;
+  --color-text-inverse: #ffffff;
+  --color-text-category: #ffbb55;
+
+  --color-border-light: #ffc0c0;
+  --color-border-medium: #ff8c8c;
+  --color-border-dark: #662222;
+  --color-border-highlight: #ffd700;
+
+  --color-titlebar-start: #ff4c4c;
+  --color-titlebar-end: #6633ff;
 } */
 
 /* Amber / Autumn
