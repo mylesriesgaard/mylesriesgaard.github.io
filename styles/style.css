@@ -26,6 +26,31 @@
   --color-titlebar-end: #1084d0;
 }
 
+/* Windows 95 */
+/* :root {
+  --color-bg-main: #008080;
+  --color-bg-window: #c0c0c0;
+  --color-bg-panel: #dfdfdf;
+  --color-bg-hover: #eaeaea;
+  --color-bg-active: #c0c0c0;
+  --color-bg-scrollbar-track: #ffffff;
+
+  --color-text-main: #000000;
+  --color-text-muted: #404040;
+  --color-text-link: #0000ee;
+  --color-text-link-hover: #000000;
+  --color-text-inverse: #ffffff;
+  --color-text-category: #333333;
+
+  --color-border-light: #ffffff;
+  --color-border-medium: #808080;
+  --color-border-dark: #000000;
+  --color-border-highlight: #fff;
+
+  --color-titlebar-start: #000080;
+  --color-titlebar-end: #1084d0;
+} */
+
 /* Coffee and Beige */
 /* :root {
   --color-bg-main: #d9c7b0;
@@ -365,6 +390,14 @@ h1 { font-size: 30px; }
 h2 { font-size: 26px; }
 h3 { font-size: 22px; }
 p, li, a { font-size: 20px; }
+
+a {
+  color: var(--color-text-link);
+}
+
+a:hover {
+  color: var(--color-text-link-hover);
+}
 
 img {
   border: 2px solid var(--color-border-medium);
@@ -728,6 +761,10 @@ footer p {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 24px;
+}
+
+.project-text a {
+  color: var(--color-text-link);
 }
 
 .project-text p {
