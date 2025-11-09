@@ -594,7 +594,7 @@ footer p {
   border-right: 2px solid var(--color-border-medium);
   border-bottom: 2px solid var(--color-border-medium);
   padding: 6px;
-  margin: 10px 10px 0 10px;
+  margin: 10px 10px 10px 10px;
 }
 
 .filter-btn {
@@ -929,7 +929,7 @@ footer p {
   .window { width: 100%; }
 
   .nav-btn {
-    flex: 1 1 45%;
+    flex: 1 1 20%;
     font-size: 12px;
   }
 
@@ -979,7 +979,10 @@ footer p {
     text-align: center;
   }
 
-  .filter-btn { font-size: 12px; }
+  .filter-btn { 
+    font-size: 12px; 
+    flex: 30%;
+  }
 
   .project-card { font-size: 14px;
   }
