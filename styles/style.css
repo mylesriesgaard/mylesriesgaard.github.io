@@ -3,27 +3,27 @@
 ============================== */
 
 :root {
-  --color-bg-main: #008080;
-  --color-bg-window: #c0c0c0;
-  --color-bg-panel: #dfdfdf;
-  --color-bg-hover: #eaeaea;
-  --color-bg-active: #c0c0c0;
+  --color-bg-main: #7a8f7a;
+  --color-bg-window: #c8d6c0;
+  --color-bg-panel: #dbe3d3;
+  --color-bg-hover: #e9f0e1;
+  --color-bg-active: #c2d0b8;
   --color-bg-scrollbar-track: #ffffff;
 
-  --color-text-main: #000000;
-  --color-text-muted: #404040;
-  --color-text-link: #0000ee;
+  --color-text-main: #1a1f1a;
+  --color-text-muted: #3f453f;
+  --color-text-link: #2d6b2d;
   --color-text-link-hover: #000000;
   --color-text-inverse: #ffffff;
-  --color-text-category: #333333;
+  --color-text-category: #2f3d2f;
 
   --color-border-light: #ffffff;
-  --color-border-medium: #808080;
-  --color-border-dark: #000000;
+  --color-border-medium: #9aa59a;
+  --color-border-dark: #505a50;
   --color-border-highlight: #fff;
 
-  --color-titlebar-start: #000080;
-  --color-titlebar-end: #1084d0;
+  --color-titlebar-start: #3f704d;
+  --color-titlebar-end: #5c9e6b;
 }
 
 /* Windows 95 */
@@ -606,6 +606,7 @@ footer p {
   font-size: 17px;
   cursor: pointer;
   font-family: "W95FA", "MS Sans Serif", "Microsoft Sans Serif", Tahoma, Geneva, sans-serif;
+  color: var(--color-text-main);
 }
 
 .filter-btn:hover {
