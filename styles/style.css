@@ -22,9 +22,36 @@
   --color-border-dark: #505a50;
   --color-border-highlight: #fff;
 
+  --color-titlebar-text: #fff;
   --color-titlebar-start: #3f704d;
   --color-titlebar-end: #5c9e6b;
 }
+
+/* Spring Bloom */
+/* :root {
+  --color-bg-main: #a6d5a8;
+  --color-bg-window: #e1f3da;
+  --color-bg-panel: #f6f9f1;
+  --color-bg-hover: #fffdf8;
+  --color-bg-active: #cfe9c9;
+  --color-bg-scrollbar-track: #ffffff;
+
+  --color-text-main: #2a392a;
+  --color-text-muted: #4c594c;
+  --color-text-link: #d673a2;
+  --color-text-link-hover: #000000;
+  --color-text-inverse: #ffffff;
+  --color-text-category: #3d4b3d;
+
+  --color-border-light: #ffffff;
+  --color-border-medium: #b8d8b9;
+  --color-border-dark: #5e785e;
+  --color-border-highlight: #fff;
+
+  --color-titlebar-text: #fff;
+  --color-titlebar-start: #7cc489;
+  --color-titlebar-end: #e89bb0;
+} */
 
 /* Windows 95 */
 /* :root {
@@ -456,7 +483,10 @@ button {
   font-weight: bold;
 }
 
-.title-bar-text { padding-left: 4px; }
+.title-bar-text { 
+  color: var(--color-titlebar-text);
+  padding-left: 4px; 
+}
 
 .typing::after {
   display: inline-block;
@@ -477,7 +507,7 @@ button {
 .title-bar-controls .button {
   width: 20px;
   height: 20px;
-  color: black;
+  color: var(--color-text-main);
   background: var(--color-bg-window);
   border: 2px solid var(--color-border-light);
   border-right-color: var(--color-border-medium);
@@ -620,6 +650,50 @@ footer p {
   border-right-color: var(--color-border-light);
   border-bottom-color: var(--color-border-light);
   background: var(--color-bg-active);
+}
+
+/* ==============================
+   TERMINAL TYPING BOX
+============================== */
+
+.terminal-box {
+  background: var(--color-bg-window);
+  border: 2px solid var(--color-border-dark);
+  border-top-color: var(--color-border-light);
+  border-left-color: var(--color-border-light);
+  padding: 10px;
+  margin-bottom: 15px;
+  color: var(--color-text-main);
+  box-shadow: inset -1px -1px var(--color-border-medium),
+              inset 1px 1px var(--color-border-highlight);
+  min-height: 50px;
+}
+
+.terminal-text {
+  white-space: pre-wrap;
+}
+
+.terminal-text::after {
+  content: "";
+}
+
+.terminal-text.done::after {
+  content: "_";
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+#welcome-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#welcome-box .terminal-box {
+  margin-top: auto;
 }
 
 /* ==============================
