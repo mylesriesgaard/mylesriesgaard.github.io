@@ -477,6 +477,7 @@ button {
 .title-bar-controls .button {
   width: 20px;
   height: 20px;
+  color: black;
   background: var(--color-bg-window);
   border: 2px solid var(--color-border-light);
   border-right-color: var(--color-border-medium);
