@@ -764,6 +764,10 @@ footer p {
   font-size: 24px;
 }
 
+.project-subtitle {
+  margin-bottom: 0;
+}
+
 .project-text a {
   color: var(--color-text-link);
 }
@@ -822,7 +826,7 @@ footer p {
   padding: 2px 6px;
   font-size: 16px;
   color: var(--color-text-category);
-  margin: 3px 0 10px 0;
+  margin: 3px 0 3px 0;
   font-family: "W95FA", "MS Sans Serif", "Microsoft Sans Serif", Tahoma, sans-serif;
 }
 
