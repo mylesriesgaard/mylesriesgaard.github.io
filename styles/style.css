@@ -1007,10 +1007,6 @@ footer p {
 
   .window { width: 100%; }
 
-  #navbar a:first-child {
-    flex: 1 1 100%;
-  }
-
   .nav-btn {
     flex: 1 1 20%;
     font-size: 12px;
