@@ -999,7 +999,7 @@ footer p {
 ============================== */
 
 @media (max-height: 1100px) {
-  #projects-scroll { height: 70vh; }
+  #projects-scroll { height: 65vh; }
 }
 
 @media (max-width: 800px) {
