@@ -74,309 +74,37 @@
   --color-border-dark: #000000;
   --color-border-highlight: #fff;
 
+  --color-titlebar-text: #ffffff;
   --color-titlebar-start: #000080;
   --color-titlebar-end: #1084d0;
 } */
 
-/* Coffee and Beige */
+/* Amber Terminal */
 /* :root {
-  --color-bg-main: #d9c7b0;
-  --color-bg-window: #e4d5be;
-  --color-bg-panel: #f0e3cb;
-  --color-bg-hover: #f8f1dc;
-  --color-bg-active: #dacdb3;
-  --color-bg-scrollbar-track: #c7b69a;
+  --color-bg-main: #000000;
+  --color-bg-window: #1a0f00;
+  --color-bg-panel: #261700;
+  --color-bg-hover: #332000;
+  --color-bg-active: #140c00;
+  --color-bg-scrollbar-track: #000000;
 
-  --color-text-main: #362b20;
-  --color-text-muted: #655344;
-  --color-text-link: #8f7158;
-  --color-text-link-hover: #000000;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #4a3b2e;
+  --color-text-main: #ffb000;
+  --color-text-muted: #cc8a00;
+  --color-text-link: #ffcc33;
+  --color-text-link-hover: #ffffff;
+  --color-text-inverse: #000000;
+  --color-text-category: #996600;
 
-  --color-border-light: #f1e0c2;
-  --color-border-medium: #b89e7e;
-  --color-border-dark: #42321e;
-  --color-border-highlight: #fff3d9;
+  --color-border-light: #ffcc33;
+  --color-border-medium: #b37700;
+  --color-border-dark: #4d3300;
+  --color-border-highlight: #ffb000;
 
-  --color-titlebar-start: #a77a50;
-  --color-titlebar-end: #d4b48b;
+  --color-titlebar-text: #ffcc33;
+  --color-titlebar-start: #664000;
+  --color-titlebar-end: #664000;
 } */
 
-/* Mocha */
-/* :root {
-  --color-bg-main: #b39b84;
-  --color-bg-window: #c3af98;
-  --color-bg-panel: #d8c7b2;
-  --color-bg-hover: #ede1d2;
-  --color-bg-active: #b9a088;
-  --color-bg-scrollbar-track: #ffffff;
-
-  --color-text-main: #2f1f13;
-  --color-text-muted: #604a36;
-  --color-text-link: #8c5638;
-  --color-text-link-hover: #000000;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #402b1a;
-
-  --color-border-light: #ffffff;
-  --color-border-medium: #bda68f;
-  --color-border-dark: #705642;
-  --color-border-highlight: #fff;
-
-  --color-titlebar-start: #8c6a4a;
-  --color-titlebar-end: #c5a37f;
-} */
-
-/* Sticky Note */
-/* :root {
-  --color-bg-main: #fef3c7;
-  --color-bg-window: #fff8d9;
-  --color-bg-panel: #fffce8;
-  --color-bg-hover: #fffef5;
-  --color-bg-active: #fef5b8;
-  --color-bg-scrollbar-track: #f8edb5;
-
-  --color-text-main: #5a482e;
-  --color-text-muted: #8a7153;
-  --color-text-link: #b78c55;
-  --color-text-link-hover: #000000;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #765f42;
-
-  --color-border-light: #fff9d8;
-  --color-border-medium: #d9c187;
-  --color-border-dark: #5b482f;
-  --color-border-highlight: #fffcd3;
-
-  --color-titlebar-start: #d4b266;
-  --color-titlebar-end: #f2d298;
-} */
-
-/* Sky Blue
-:root {
-  --color-bg-main: #87bfff;
-  --color-bg-window: #d6e9ff;
-  --color-bg-panel: #e7f2ff;
-  --color-bg-hover: #f3f9ff;
-  --color-bg-active: #c3dcff;
-  --color-bg-scrollbar-track: #ffffff;
-
-  --color-text-main: #001f33;
-  --color-text-muted: #3a4a5a;
-  --color-text-link: #0033cc;
-  --color-text-link-hover: #000000;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #334a66;
-
-  --color-border-light: #ffffff;
-  --color-border-medium: #94b7d9;
-  --color-border-dark: #335577;
-  --color-border-highlight: #fff;
-
-  --color-titlebar-start: #0050b2;
-  --color-titlebar-end: #3c87ff;
-} */
-
-/* Moss Green
-:root {
-  --color-bg-main: #7a8f7a;
-  --color-bg-window: #c8d6c0;
-  --color-bg-panel: #dbe3d3;
-  --color-bg-hover: #e9f0e1;
-  --color-bg-active: #c2d0b8;
-  --color-bg-scrollbar-track: #ffffff;
-
-  --color-text-main: #1a1f1a;
-  --color-text-muted: #3f453f;
-  --color-text-link: #2d6b2d;
-  --color-text-link-hover: #000000;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #2f3d2f;
-
-  --color-border-light: #ffffff;
-  --color-border-medium: #9aa59a;
-  --color-border-dark: #505a50;
-  --color-border-highlight: #fff;
-
-  --color-titlebar-start: #3f704d;
-  --color-titlebar-end: #5c9e6b;
-} */
-
-/* Beige + Green
-:root {
-  --color-bg-main: #c9c9b3;
-  --color-bg-window: #e8e8d5;
-  --color-bg-panel: #f3f3e5;
-  --color-bg-hover: #fcfcf0;
-  --color-bg-active: #dcdcc8;
-  --color-bg-scrollbar-track: #ffffff;
-
-  --color-text-main: #1e2b1e;
-  --color-text-muted: #505950;
-  --color-text-link: #005500;
-  --color-text-link-hover: #000000;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #223322;
-
-  --color-border-light: #ffffff;
-  --color-border-medium: #a5a58a;
-  --color-border-dark: #5a5a44;
-  --color-border-highlight: #fff;
-
-  --color-titlebar-start: #4c804c;
-  --color-titlebar-end: #74a774;
-} */
-
-/* Grape Soda 
-:root {
-  --color-bg-main: #a57bff;
-  --color-bg-window: #d2baff;
-  --color-bg-panel: #e0ccff;
-  --color-bg-hover: #eee0ff;
-  --color-bg-active: #ccb3ff;
-  --color-bg-scrollbar-track: #ffffff;
-
-  --color-text-main: #2a1f3a;
-  --color-text-muted: #5a4b6a;
-  --color-text-link: #5522aa;
-  --color-text-link-hover: #000000;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #3b2a59;
-
-  --color-border-light: #ffffff;
-  --color-border-medium: #a98fdc;
-  --color-border-dark: #5a3d99;
-  --color-border-highlight: #fff;
-
-  --color-titlebar-start: #7646d0;
-  --color-titlebar-end: #9e75ff;
-} */
-
-/* Tropical
-:root {
-  --color-bg-main: #007a66;
-  --color-bg-window: #00a383;
-  --color-bg-panel: #33bfa1;
-  --color-bg-hover: #66d5ba;
-  --color-bg-active: #009b7e;
-  --color-bg-scrollbar-track: #ffffff;
-
-  --color-text-main: #002e26;
-  --color-text-muted: #00594b;
-  --color-text-link: #004c3f;
-  --color-text-link-hover: #000000;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #00332a;
-
-  --color-border-light: #99f0db;
-  --color-border-medium: #007a66;
-  --color-border-dark: #003d33;
-  --color-border-highlight: #a8ffe7;
-
-  --color-titlebar-start: #00997a;
-  --color-titlebar-end: #33e2b8;
-} */
-
-/* Tropical 2 */
-/* :root {
-  --color-bg-main: #ff7e7e;
-  --color-bg-window: #ffa0a0;
-  --color-bg-panel: #ffc0c0;
-  --color-bg-hover: #ffe0e0;
-  --color-bg-active: #ff4c4c;
-  --color-bg-scrollbar-track: #ff9999;
-
-  --color-text-main: #1e2a6f;
-  --color-text-muted: #4955a0;
-  --color-text-link: #ffdd66;
-  --color-text-link-hover: #fff4a0;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #ffbb55;
-
-  --color-border-light: #ffc0c0;
-  --color-border-medium: #ff8c8c;
-  --color-border-dark: #662222;
-  --color-border-highlight: #ffd700;
-
-  --color-titlebar-start: #ff4c4c;
-  --color-titlebar-end: #6633ff;
-} */
-
-/* Amber / Autumn
-:root {
-  --color-bg-main: #a6784d;
-  --color-bg-window: #d9b08c;
-  --color-bg-panel: #f0cfa1;
-  --color-bg-hover: #f8e4c3;
-  --color-bg-active: #e3b77c;
-  --color-bg-scrollbar-track: #ffffff;
-
-  --color-text-main: #2e1a00;
-  --color-text-muted: #5a3a1a;
-  --color-text-link: #804000;
-  --color-text-link-hover: #000000;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #4a2a00;
-
-  --color-border-light: #ffffff;
-  --color-border-medium: #c9a57a;
-  --color-border-dark: #704f30;
-  --color-border-highlight: #fff;
-
-  --color-titlebar-start: #b36b00;
-  --color-titlebar-end: #e69c45;
-} */
-
-/* Bright Yellow / Orange
-:root {
-  --color-bg-main: #ff7b00;
-  --color-bg-window: #ffdf00;
-  --color-bg-panel: #ffee80;
-  --color-bg-hover: #fff2b3;
-  --color-bg-active: #ffd950;
-  --color-bg-scrollbar-track: #ffffff;
-
-  --color-text-main: #332b00;
-  --color-text-muted: #664d00;
-  --color-text-link: #cc3300;
-  --color-text-link-hover: #000000;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #4a3a00;
-
-  --color-border-light: #ffffff;
-  --color-border-medium: #d4a700;
-  --color-border-dark: #885500;
-  --color-border-highlight: #fff;
-
-  --color-titlebar-start: #ff3300;
-  --color-titlebar-end: #ff9900;
-} 
-
-/* Sandstone
-:root {
-  --color-bg-main: #a98b71;
-  --color-bg-window: #cdbba9;
-  --color-bg-panel: #e0d2c1;
-  --color-bg-hover: #ede3d7;
-  --color-bg-active: #c4b09e;
-  --color-bg-scrollbar-track: #ffffff;
-
-  --color-text-main: #2a2015;
-  --color-text-muted: #4a3f30;
-  --color-text-link: #663f20;
-  --color-text-link-hover: #000000;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #3a2e1f;
-
-  --color-border-light: #ffffff;
-  --color-border-medium: #b79f8b;
-  --color-border-dark: #6a5744;
-  --color-border-highlight: #fff;
-
-  --color-titlebar-start: #b36b4a;
-  --color-titlebar-end: #dca57d;
-} */
 
 /* ==============================
    GLOBAL STYLES
