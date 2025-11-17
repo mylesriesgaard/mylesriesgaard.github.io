@@ -188,10 +188,8 @@ body {
   color: var(--color-text-main);
 }
 
-
-
 #container {
-  width: 98%;
+  width: 100%;
   max-width: 1200px;
   padding: 10px;
   font-size: 18px;
@@ -251,7 +249,7 @@ button {
   border-right-color: var(--color-border-medium);
   border-bottom-color: var(--color-border-medium);
   width: 80%;
-  max-width: 900px;
+  max-width: 1200px;
   min-width: 300px;
   box-shadow: inset -1px -1px var(--color-border-dark), inset 1px 1px var(--color-border-highlight);
 }
@@ -409,7 +407,7 @@ footer p {
   border-right: 2px solid var(--color-border-medium);
   border-bottom: 2px solid var(--color-border-medium);
   padding: 6px;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 0 10px 0;
 }
 
 .filter-btn {
@@ -488,7 +486,7 @@ footer p {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 10px;
-  margin: 10px;
+  margin: 10px 0 10px 0;
 }
 
 .home-box {
@@ -533,7 +531,7 @@ footer p {
    ABOUT PAGE
 ============================== */
 
-#about-section { margin: 10px; }
+#about-section { margin: 10px 0 10px 0; }
 
 .about-content {
   display: flex;
@@ -693,7 +691,8 @@ footer p {
   height: 75vh;
   overflow-y: auto;
   margin-top: 8px;
-  margin-right: 10px;
+  margin-right: 0;
+  margin-left: -10px;
 }
 
 #projects-scroll::-webkit-scrollbar {
@@ -729,7 +728,7 @@ footer p {
 ============================== */
 
 #contact-section {
-  margin: 10px;
+  margin: 10px 0 10px 0;
   padding: 20px;
   background: var(--color-bg-panel);
   border-top: 2px solid var(--color-border-light);
@@ -851,7 +850,7 @@ footer p {
   }
 
   .filter-btn { 
-    font-size: 14px; 
+    font-size: 13px; 
   }
 
   .project-card { font-size: 14px;
