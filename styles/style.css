@@ -105,6 +105,60 @@
   --color-titlebar-end: #664000;
 } */
 
+/* Ocean Breeze */
+/*
+:root {
+  --color-bg-main: #5f9ea0;
+  --color-bg-window: #e0f2f1;
+  --color-bg-panel: #cce8e4;
+  --color-bg-hover: #b2d8d0;
+  --color-bg-active: #a0c9c2;
+  --color-bg-scrollbar-track: #ffffff;
+
+  --color-text-main: #2f4f4f;
+  --color-text-muted: #6b8e8b;
+  --color-text-link: #007f7f;
+  --color-text-link-hover: #004d4d;
+  --color-text-inverse: #ffffff;
+  --color-text-category: #3b5858;
+
+  --color-border-light: #ffffff;
+  --color-border-medium: #a6b8b7;
+  --color-border-dark: #2f4f4f;
+  --color-border-highlight: #fff;
+
+  --color-titlebar-text: #ffffff;
+  --color-titlebar-start: #2f4f4f;
+  --color-titlebar-end: #468282;
+} */
+
+/* Eternal Sunshine of the Spotless Mind */
+/*
+:root {
+  --color-bg-main: #89cfff;
+  --color-bg-window: #f3f9ff;
+  --color-bg-panel: #e3f2ff;
+  --color-bg-hover: #d7ebff;
+  --color-bg-active: #bcdfff;
+  --color-bg-scrollbar-track: #ffffff;
+
+  --color-text-main: #1f2a33; 
+  --color-text-muted: #4f5d66;
+  --color-text-link: #ff6d00;
+  --color-text-link-hover: #cc5600;
+  --color-text-inverse: #ffffff;
+  --color-text-category: #33424d;
+
+  --color-border-light: #ffffff;
+  --color-border-medium: #c7d3dd;
+  --color-border-dark: #c7d3dd; 
+  --color-border-highlight: #c7d3dd;
+
+  --color-titlebar-text: #ffffff;
+  --color-titlebar-start: #ff6d00;
+  --color-titlebar-end: #ff6d00;
+} */
+
 
 /* ==============================
    GLOBAL STYLES
@@ -135,7 +189,7 @@ body {
 }
 
 #container {
-  width: 98%;
+  width: 100%;
   max-width: 1200px;
   padding: 10px;
   font-size: 18px;
@@ -195,7 +249,7 @@ button {
   border-right-color: var(--color-border-medium);
   border-bottom-color: var(--color-border-medium);
   width: 80%;
-  max-width: 900px;
+  max-width: 1200px;
   min-width: 300px;
   box-shadow: inset -1px -1px var(--color-border-dark), inset 1px 1px var(--color-border-highlight);
 }
@@ -250,6 +304,22 @@ button {
   border: 2px solid var(--color-border-medium);
   border-right-color: var(--color-border-light);
   border-bottom-color: var(--color-border-light);
+}
+
+.title-bar-controls .settings-btn {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-bar-controls .settings-btn img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  display: block;
+  margin: 0;     
+  border: none;
 }
 
 /* ==============================
@@ -353,7 +423,7 @@ footer p {
   border-right: 2px solid var(--color-border-medium);
   border-bottom: 2px solid var(--color-border-medium);
   padding: 6px;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 0 10px 0;
 }
 
 .filter-btn {
@@ -432,7 +502,7 @@ footer p {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 10px;
-  margin: 10px;
+  margin: 10px 0 10px 0;
 }
 
 .home-box {
@@ -477,7 +547,7 @@ footer p {
    ABOUT PAGE
 ============================== */
 
-#about-section { margin: 10px; }
+#about-section { margin: 10px 0 10px 0; }
 
 .about-content {
   display: flex;
@@ -637,7 +707,8 @@ footer p {
   height: 75vh;
   overflow-y: auto;
   margin-top: 8px;
-  margin-right: 10px;
+  margin-right: 0;
+  margin-left: -10px;
 }
 
 #projects-scroll::-webkit-scrollbar {
@@ -673,7 +744,7 @@ footer p {
 ============================== */
 
 #contact-section {
-  margin: 10px;
+  margin: 10px 0 10px 0;
   padding: 20px;
   background: var(--color-bg-panel);
   border-top: 2px solid var(--color-border-light);
@@ -736,8 +807,12 @@ footer p {
   .window { width: 100%; }
 
   .nav-btn {
-    flex: 1 1 20%;
-    font-size: 12px;
+    flex: 1 1 10%;
+  }
+
+  #navbar a {
+    flex: 1 1 10%;
+    font-size: 18px;
   }
 
   #pagetitle h1 { font-size: 16px; }
@@ -779,16 +854,36 @@ footer p {
 }
 
 @media (max-width: 500px) {
+<<<<<<< HEAD
+=======
   .title-bar-controls { align-self: flex-end; }
 
+  #navbar a {
+    font-size: 15px;
+  }
+
+>>>>>>> 3a2ee5a1e79c51e79239194186412b2bf8ae5907
   footer {
     font-size: 11px;
     text-align: center;
   }
 
   .filter-btn { 
+    font-size: 13px; 
+  }
+
+  .project-card { font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  #navbar a {
+    font-size: 14px;
+  }
+
+  .filter-btn { 
     font-size: 12px; 
-    flex: 30%;
   }
 
   .project-card { font-size: 14px;
