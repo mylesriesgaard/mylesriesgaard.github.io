@@ -633,7 +633,7 @@ footer p {
 
 .project-text h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: -5px;
   font-size: 24px;
 }
 
@@ -649,6 +649,10 @@ footer p {
   margin-top: 0;
   font-size: 20px;
   line-height: 1.4;
+}
+
+.director {
+  margin-bottom: 0;
 }
 
 .project-media {
@@ -699,7 +703,7 @@ footer p {
   padding: 2px 6px;
   font-size: 16px;
   color: var(--color-text-category);
-  margin: 3px 0 3px 0;
+  margin: 3px 0 6px 0;
   font-family: "W95FA", "MS Sans Serif", "Microsoft Sans Serif", Tahoma, sans-serif;
 }
 
