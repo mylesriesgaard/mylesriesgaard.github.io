@@ -858,7 +858,6 @@ footer p {
 }
 
 @media (max-width: 500px) {
-  .title-bar-controls { align-self: flex-end; }
 
   #navbar a {
     font-size: 15px;
