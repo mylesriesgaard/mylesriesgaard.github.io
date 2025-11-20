@@ -313,6 +313,7 @@
 
 html {
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -1034,10 +1035,13 @@ footer p {
 ============================== */
 
 @media (max-height: 1100px) {
+  html { height: 150%; }
+
   #projects-scroll { height: 65vh; }
 }
 
 @media (max-width: 800px) {
+
   body { padding: 15px; }
 
   .window { width: 100%; }

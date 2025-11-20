@@ -1,4 +1,4 @@
-// THEME DROPDOWN
+// THEME DROPDOWN + TERMINAL TYPING
 
 document.addEventListener("DOMContentLoaded", () => {
     const settingsBtn = document.querySelector(".settings-btn");
@@ -6,56 +6,101 @@ document.addEventListener("DOMContentLoaded", () => {
     const themeButtons = document.querySelectorAll(".theme-option");
     const body = document.body;
 
+    const terminalEl = document.getElementById("terminal-text");
+    let typingTimeout = null; 
+    let typingIndex = 0;
+    let isTyping = false;
+
+    function getCurrentTheme() {
+        const match = document.body.className.match(/theme-(\S+)/);
+        return match ? match[1] : null;
+    }
+
+    function getMessageForTheme() {
+        const theme = getCurrentTheme();
+
+        switch (theme) {
+            case "windows95":
+                return "Developers, developers, developers, developers";
+            case "aftersun":
+                return "I think it's nice that we share the same sky";
+            case "her":
+                return "Where are you going?";
+            case "kimochiwarui":
+                return "When? When? When? When? When? When? When?"
+            case "spaceheavy":
+                return "They put a heavy space between us"
+            case "theglow":
+                return "I want wind to blow"
+            default:
+                return "Me with nothing to say / and you and your autumn sweater";
+        }
+    }
+
+    function startTerminalTyping() {
+        const text = getMessageForTheme();
+
+        if (typingTimeout) clearTimeout(typingTimeout);
+
+        typingIndex = 0;
+        isTyping = true;
+        terminalEl.textContent = "";
+        terminalEl.classList.remove("done");
+
+        function type() {
+            if (typingIndex < text.length) {
+                terminalEl.textContent += text.charAt(typingIndex);
+                typingIndex++;
+                typingTimeout = setTimeout(type, 100);
+            } else {
+                isTyping = false;
+                terminalEl.classList.add("done");
+            }
+        }
+
+        type();
+    }
+
+    // -----------------------------
+    // THEME DROPDOWN
+    // -----------------------------
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) body.classList.add(`theme-${savedTheme}`);
 
     settingsBtn.addEventListener("click", () => {
-      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-      settingsBtn.classList.toggle("open");
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        settingsBtn.classList.toggle("open");
     });
 
     document.addEventListener("click", (e) => {
-      if (!settingsBtn.contains(e.target) && !dropdown.contains(e.target)) {
-        dropdown.style.display = "none";
-        settingsBtn.classList.remove("open");
-      }
+        if (!settingsBtn.contains(e.target) && !dropdown.contains(e.target)) {
+            dropdown.style.display = "none";
+            settingsBtn.classList.remove("open");
+        }
     });
 
     themeButtons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        body.className = body.className.replace(/\btheme-\S+/g, "");
-        const theme = btn.dataset.theme;
-        body.classList.add(`theme-${theme}`);
-        localStorage.setItem("theme", theme);
-        dropdown.style.display = "none";
-        settingsBtn.classList.remove("open");
-      });
+        btn.addEventListener("click", () => {
+            const theme = btn.dataset.theme;
+
+            body.className = body.className.replace(/\btheme-\S+/g, "");
+            body.classList.add(`theme-${theme}`);
+            localStorage.setItem("theme", theme);
+
+            dropdown.style.display = "none";
+            settingsBtn.classList.remove("open");
+
+            startTerminalTyping();
+        });
     });
-});
 
-// TERMINAL TYPING (unused for now)
+    startTerminalTyping();
 
-document.addEventListener("DOMContentLoaded", function() {
-    const text = "Me with nothing to say / and you and your autumn sweater";
-    const el = document.getElementById("terminal-text");
-    let i = 0;
 
-    function type() {
-      if (i < text.length) {
-        el.textContent += text.charAt(i);
-        i++;
-        setTimeout(type, 100);
-      } else {
-        el.classList.add("done");
-      }
-    }
 
-    type();
-});
-
-// UNIVERSAL FILTER SCRIPT
-
-document.addEventListener('DOMContentLoaded', () => {
+    // ----------------------------------------------
+    // UNIVERSAL FILTER SCRIPT
+    // ----------------------------------------------
     const buttons = document.querySelectorAll('.filter-btn');
     const projects = document.querySelectorAll('.project-card');
 
@@ -83,11 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 .split(',')
                 .map(v => v.trim().toLowerCase());
 
-            if (filter === 'all' || values.includes(filter)) {
-                proj.style.display = 'block';
-            } else {
-                proj.style.display = 'none';
-            }
+            proj.style.display = (filter === 'all' || values.includes(filter)) ?
+                'block' : 'none';
         });
 
         if (updateURL) {
@@ -117,4 +159,5 @@ document.addEventListener('DOMContentLoaded', () => {
         const filter = e.state?.filter || 'all';
         applyFilter(filter, false);
     });
+
 });
