@@ -1035,7 +1035,6 @@ footer p {
 ============================== */
 
 @media (max-height: 1100px) {
-  html { height: 150%; }
 
   #projects-scroll { height: 65vh; }
 }
