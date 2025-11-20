@@ -13,7 +13,15 @@
     <header id="header" class="title-bar">
       <div id="name" class="title-bar-text">mriesgaard/<span class="typing">contact</span></div>
       <div class="title-bar-controls">
-        <button class="button settings-btn"><img src="../media/gear.png" alt="Settings"></button>
+        <div class="settings-dropdown">
+          <button class="settings-btn"><img src="../media/gear.png" alt="Settings"></button>
+          <div class="dropdown-menu">
+            <button class="theme-option" data-theme="default">Default Theme</button>
+            <button class="theme-option" data-theme="windows95">Windows 95</button>
+            <button class="theme-option" data-theme="oceanbreeze">Ocean Breeze</button>
+            <button class="theme-option" data-theme="eternalsunshine">Eternal Sunshine</button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -46,5 +54,7 @@
         <p>© 2025 Myles Riesgaard. All Rights Reserved.</p>
     </footer>
   </section>
+
+  <script src="../script.js"></script>
 </body>
 </html>

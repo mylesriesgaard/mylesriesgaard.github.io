@@ -28,7 +28,7 @@
 }
 
 /* Spring Bloom */
-/* :root {
+.theme-springbloom {
   --color-bg-main: #a6d5a8;
   --color-bg-window: #e1f3da;
   --color-bg-panel: #f6f9f1;
@@ -51,10 +51,10 @@
   --color-titlebar-text: #fff;
   --color-titlebar-start: #7cc489;
   --color-titlebar-end: #e89bb0;
-} */
+}
 
 /* Windows 95 */
-/* :root {
+.theme-windows95 {
   --color-bg-main: #008080;
   --color-bg-window: #c0c0c0;
   --color-bg-panel: #dfdfdf;
@@ -77,10 +77,10 @@
   --color-titlebar-text: #ffffff;
   --color-titlebar-start: #000080;
   --color-titlebar-end: #1084d0;
-} */
+}
 
 /* Amber Terminal */
-/* :root {
+.theme-amberterminal {
   --color-bg-main: #000000;
   --color-bg-window: #1a0f00;
   --color-bg-panel: #261700;
@@ -103,11 +103,10 @@
   --color-titlebar-text: #ffcc33;
   --color-titlebar-start: #664000;
   --color-titlebar-end: #664000;
-} */
+}
 
 /* Ocean Breeze */
-/*
-:root {
+.theme-oceanbreeze {
   --color-bg-main: #5f9ea0;
   --color-bg-window: #e0f2f1;
   --color-bg-panel: #cce8e4;
@@ -130,11 +129,10 @@
   --color-titlebar-text: #ffffff;
   --color-titlebar-start: #2f4f4f;
   --color-titlebar-end: #468282;
-} */
+}
 
 /* Eternal Sunshine of the Spotless Mind */
-/*
-:root {
+.theme-eternalsunshine {
   --color-bg-main: #89cfff;
   --color-bg-window: #f3f9ff;
   --color-bg-panel: #e3f2ff;
@@ -157,7 +155,7 @@
   --color-titlebar-text: #ffffff;
   --color-titlebar-start: #ff6d00;
   --color-titlebar-end: #ff6d00;
-} */
+}
 
 
 /* ==============================
@@ -321,6 +319,91 @@ button {
   margin: 0;     
   border: none;
 }
+
+.settings-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.settings-btn {
+  border-radius: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+
+  background: var(--color-bg-window);
+  border: 2px solid var(--color-border-light);
+  border-right-color: var(--color-border-medium);
+  border-bottom-color: var(--color-border-medium);
+
+  box-shadow: inset -1px -1px var(--color-border-dark),
+              inset 1px 1px var(--color-border-highlight);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-btn img {
+  width: 16px;
+  height: 16px;
+  border-radius: 0;
+}
+
+.settings-btn.open {
+  border: 2px solid var(--color-border-medium);
+  border-right-color: var(--color-border-light);
+  border-bottom-color: var(--color-border-light);
+
+  box-shadow: inset 1px 1px var(--color-border-dark),
+              inset -1px -1px var(--color-border-highlight);
+}
+
+/* -------------------------------
+   DROPDOWN MENU
+   ------------------------------- */
+.settings-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+
+  top: 18px;
+  right: 0;
+
+  background: var(--color-bg-window);
+
+  border: 2px solid var(--color-border-light);
+  border-right-color: var(--color-border-dark);
+  border-bottom-color: var(--color-border-dark);
+
+  box-shadow: inset -1px -1px var(--color-border-medium),
+              inset 1px 1px var(--color-border-highlight);
+
+  padding: 4px;
+  z-index: 200;
+  border-radius: 0;
+}
+
+.theme-option {
+  width: 100%;
+  text-align: left;
+  background: var(--color-bg-panel);
+  border: 2px solid var(--color-border-light);
+  border-right-color: var(--color-border-medium);
+  border-bottom-color: var(--color-border-medium);
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 4px;
+  border-radius: 0;
+}
+
+.theme-option[data-theme="default"] { background: #7a8f7a; color: #fff; }
+.theme-option[data-theme="springbloom"] { background: #a6d5a8; color: #2a392a; }
+.theme-option[data-theme="windows95"] { background: #008080; color: #fff; }
+.theme-option[data-theme="amberterminal"] { background: #000000; color: #ffb000; }
+.theme-option[data-theme="oceanbreeze"] { background: #5f9ea0; color: #2f4f4f; }
+.theme-option[data-theme="eternalsunshine"] { background: #89cfff; color: #1f2a33; }
+
 
 /* ==============================
    NAVIGATION BAR

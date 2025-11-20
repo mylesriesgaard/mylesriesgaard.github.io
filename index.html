@@ -13,7 +13,16 @@
     <header id="header" class="title-bar">
       <div id="name" class="title-bar-text">mriesgaard/<span class="typing">home</span></div>
       <div class="title-bar-controls">
-        <button class="button settings-btn"><img src="media/gear.png" alt="Settings"></button>
+        <div class="settings-dropdown">
+          <button class="settings-btn"><img src="media/gear.png" alt="Settings"></button>
+          <div class="dropdown-menu">
+            <button class="theme-option" data-theme="default">Default Theme</button>
+            <button class="theme-option" data-theme="windows95">Windows 95</button>
+            <button class="theme-option" data-theme="oceanbreeze">Ocean Breeze</button>
+            <button class="theme-option" data-theme="eternalsunshine">Eternal Sunshine</button>
+          </div>
+      </div>
+
       </div>
     </header>
 
@@ -51,25 +60,7 @@
     </footer>
 </section>
 
-<!-- <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const text = "Me with nothing to say / and you and your autumn sweater";
-    const el = document.getElementById("terminal-text");
-    let i = 0;
-
-    function type() {
-      if (i < text.length) {
-        el.textContent += text.charAt(i);
-        i++;
-        setTimeout(type, 100);
-      } else {
-        el.classList.add("done");
-      }
-    }
-
-    type();
-  });
-</script> -->
+<script src="script.js"></script>
 
 </body>
 </html>
