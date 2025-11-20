@@ -350,6 +350,10 @@ button {
   border-radius: 0;
 }
 
+.settings-btn:hover {
+  cursor: pointer;
+}
+
 .settings-btn.open {
   border: 2px solid var(--color-border-medium);
   border-right-color: var(--color-border-light);

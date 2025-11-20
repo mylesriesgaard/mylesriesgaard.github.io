@@ -61,95 +61,73 @@ document.addEventListener("DOMContentLoaded", function() {
     type();
 });
 
-// PROJECTS FILTER BAR
+// UNIVERSAL FILTER SCRIPT
 
-const buttons = document.querySelectorAll('.filter-btn');
-const projects = document.querySelectorAll('.project-card');
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.filter-btn');
+    const projects = document.querySelectorAll('.project-card');
 
-function applyFilter(filter, updateURL = true) {
-    buttons.forEach(b => {
-        b.classList.toggle('active', b.getAttribute('data-filter') === filter);
-    });
+    if (!buttons.length || !projects.length) return; // Nothing to filter
 
-    projects.forEach(proj => {
-        const categories = proj.getAttribute('data-category')
-            .split(',')
-            .map(cat => cat.trim().toLowerCase());
+    // Determine which attribute to filter by: data-category or data-role
+    const filterAttr = projects[0].hasAttribute('data-category') ? 'data-category' :
+                       projects[0].hasAttribute('data-role') ? 'data-role' : null;
 
-        if (filter === 'all' || categories.includes(filter)) {
-            proj.style.display = 'block';
-        } else {
-            proj.style.display = 'none';
-        }
-    });
+    if (!filterAttr) return; // No valid attribute found
 
-    if (updateURL) {
-        const url = new URL(window.location);
-        if (filter === 'all') {
-            url.searchParams.delete('filter');
-        } else {
-            url.searchParams.set('filter', filter);
-        }
-        window.history.pushState({ filter }, '', url);
-    }
-}
-
-const params = new URLSearchParams(window.location.search);
-const filterParam = params.get('filter') ? params.get('filter').toLowerCase() : 'all';
-const validFilters = ['animation', 'design', 'film', 'programming', 'composer', 'sound mixer', 'boom operator', 'all'];
-const initialFilter = validFilters.includes(filterParam) ? filterParam : 'all';
-applyFilter(initialFilter, false);
-
-buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const filter = btn.getAttribute('data-filter').toLowerCase();
-        applyFilter(filter, true);
-    });
-});
-
-window.addEventListener('popstate', e => {
-    const filter = e.state?.filter || 'all';
-    applyFilter(filter, false);
-});
-
-// FILM FILTER BAR
-
-function applyFilter(filter, updateURL = true) {
-    buttons.forEach(b => {
-    b.classList.toggle('active', b.getAttribute('data-filter') === filter);
-    });
-
-    projects.forEach(proj => {
-    const roles = proj.getAttribute('data-role')
-        .split(',')
-        .map(role => role.trim().toLowerCase());
-
-    if (filter === 'all' || roles.includes(filter)) {
-        proj.style.display = 'block';
+    // Set valid filters based on the page
+    let validFilters;
+    if (filterAttr === 'data-category') {
+        validFilters = ['animation', 'design', 'film', 'programming', 'all'];
     } else {
-        proj.style.display = 'none';
+        validFilters = ['composer', 'sound mixer', 'boom operator', 'all'];
     }
+
+    function applyFilter(filter, updateURL = true) {
+        buttons.forEach(b => {
+            b.classList.toggle('active', b.getAttribute('data-filter') === filter);
+        });
+
+        projects.forEach(proj => {
+            const values = proj.getAttribute(filterAttr)
+                .split(',')
+                .map(v => v.trim().toLowerCase());
+
+            if (filter === 'all' || values.includes(filter)) {
+                proj.style.display = 'block';
+            } else {
+                proj.style.display = 'none';
+            }
+        });
+
+        if (updateURL) {
+            const url = new URL(window.location);
+            if (filter === 'all') {
+                url.searchParams.delete('filter');
+            } else {
+                url.searchParams.set('filter', filter);
+            }
+            window.history.pushState({ filter }, '', url);
+        }
+    }
+
+    // Initial filter from URL
+    const params = new URLSearchParams(window.location.search);
+    const filterParam = params.get('filter') ? params.get('filter').toLowerCase() : 'all';
+    const initialFilter = validFilters.includes(filterParam) ? filterParam : 'all';
+    applyFilter(initialFilter, false);
+
+    // Button clicks
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.getAttribute('data-filter').toLowerCase();
+            applyFilter(filter, true);
+        });
     });
 
-    if (updateURL) {
-    const url = new URL(window.location);
-    if (filter === 'all') {
-        url.searchParams.delete('filter');
-    } else {
-        url.searchParams.set('filter', filter);
-    }
-    window.history.pushState({ filter }, '', url);
-    }
-}
-
-buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-    const filter = btn.getAttribute('data-filter').toLowerCase();
-    applyFilter(filter, true);
+    // Handle back/forward browser buttons
+    window.addEventListener('popstate', e => {
+        const filter = e.state?.filter || 'all';
+        applyFilter(filter, false);
     });
-});
-
-window.addEventListener('popstate', e => {
-    const filter = e.state?.filter || 'all';
-    applyFilter(filter, false);
 });
