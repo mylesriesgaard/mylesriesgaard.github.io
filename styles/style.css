@@ -212,8 +212,8 @@
   --color-bg-main: linear-gradient(180deg, #10082c 60%, #232f84 100%);  
   --color-bg-window: #e2dfea;    
   --color-bg-panel: #d7cfe5;        
-  --color-bg-hover: #cbbfe0;       
-  --color-bg-active: #e2dfea;      
+  --color-bg-hover: #e2dfea;       
+  --color-bg-active: #cbbfe0;      
   --color-bg-scrollbar-track: #f5f5f5;
 
   --color-text-main: #10082c;    
@@ -223,7 +223,7 @@
   --color-text-inverse: #ffffff;
   --color-text-category: #6b5a8a; 
 
-  --color-border-light: #e2dfea;     
+  --color-border-light: #ccbce3;     
   --color-border-medium: #a08abf;
   --color-border-dark: #10082c;
   --color-border-highlight: #eb2c30;
@@ -878,6 +878,10 @@ footer p {
   color: var(--color-text-link);
 }
 
+.project-text a:hover {
+  color: var(--color-text-link-hover);
+}
+
 .project-text p {
   margin-top: 0;
   font-size: 20px;
@@ -1020,7 +1024,6 @@ footer p {
 
 .contact-info a:hover {
   color: var(--color-text-link-hover);
-  background: var(--color-bg-window);
 }
 
 .contact-note {
