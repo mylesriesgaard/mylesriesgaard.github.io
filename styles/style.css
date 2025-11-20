@@ -133,29 +133,35 @@
 
 /* Aftersun */
 .theme-aftersun {
-  --color-bg-main: linear-gradient(180deg, #2f607d 0%, #73c4d6 60%, #f7e8cf 100%);
-  --color-bg-window: #f7e8cf;
-  --color-bg-panel: #f0e3d4;
-  --color-bg-hover: #e6d7c4;
-  --color-bg-active: #d6c6b3;
-  --color-bg-scrollbar-track: #ffffff;
+  --color-bg-main: linear-gradient(
+    180deg,
+    #3b6978 0%, 
+    #7fcbc5 55%, 
+    #f3d9b1 100%  
+  );
+  --color-bg-window: #ecd2af;    
+  --color-bg-panel: #f2d9b8;       
+  --color-bg-hover: #f2dcc0;  
+  --color-bg-active: #d4b793;     
+  --color-bg-scrollbar-track: #fff8f0;
 
-  --color-text-main: #2f2c28;
-  --color-text-muted: #6a645d;
-  --color-text-link: #3aa8b7;
-  --color-text-link-hover: #277983;
+  --color-text-main: #3a332d;   
+  --color-text-muted: #776c61;   
+  --color-text-link: #3a9ca3;   
+  --color-text-link-hover: #2c7377;
   --color-text-inverse: #ffffff;
-  --color-text-category: #4a4641;
+  --color-text-category: #5a5046;  
 
-  --color-border-light: #ffffff;
-  --color-border-medium: #d1c5b6;
-  --color-border-dark: #3a352f;
-  --color-border-highlight: #fff;
+  --color-border-light: #fff8f0;
+  --color-border-medium: #d7c3a9; 
+  --color-border-dark: #4a3f34;   
+  --color-border-highlight: #fff3e6;
 
   --color-titlebar-text: #ffffff;
-  --color-titlebar-start: #2f607d;
-  --color-titlebar-end: #2f607d;
+  --color-titlebar-start: #3b6978;
+  --color-titlebar-end: #3b6978;
 }
+
 
 /* Her */
 .theme-her {
@@ -284,17 +290,43 @@
   --color-titlebar-end: #c43828;    
 }
 
+.theme-worldsfair {
+  --color-bg-main: linear-gradient(180deg, #113e44 0%, #00030a 100%);
+  --color-bg-window: #0e1820;   
+  --color-bg-panel: #1a2430;      
+  --color-bg-hover: #223041;     
+  --color-bg-active: #16212d;
+  --color-bg-scrollbar-track: #0a0f15;
+
+  --color-text-main: #aab7cc;   
+  --color-text-muted: #6e7c8f;      
+  --color-text-link: #3b52bc;  
+  --color-text-link-hover: #6c7cff;
+  --color-text-inverse: #ffffff;
+  --color-text-category: #9b4ea0;
+
+  --color-border-light: #3b52bc; 
+  --color-border-medium: #20364e;
+  --color-border-dark: #00030a;
+  --color-border-highlight: #9b4ea0;
+
+  --color-titlebar-text: #ffffff;
+  --color-titlebar-start: #3b52bc;
+  --color-titlebar-end: #9b4ea0; 
+}
+
 .theme-option[data-theme="default"] { background: #7a8f7a; color: #fff; }
 .theme-option[data-theme="windows95"] { background: #008080; color: #fff; }
 .theme-option[data-theme="oceanbreeze"] { background: #5f9ea0; color: #2f4f4f; }
 .theme-option[data-theme="eternalsunshine"] { background: #89cfff; color: #1f2a33; }
 .theme-option[data-theme="lavendertown"] { background: #b8a0d6; color: #2f2c4a; }
-.theme-option[data-theme="aftersun"] { background: #e6d7c4; color: #3aa8b7; }
+.theme-option[data-theme="aftersun"] { background: #ecd2af; color: #3aa8b7; }
 .theme-option[data-theme="her"] { background: #5c2c28; color: #f4c1a6; }
 .theme-option[data-theme="bluevelvet"] { background: #253a8a; color: #cfd4f0; }
 .theme-option[data-theme="kimochiwarui"] { background: #232f85; color: #fc645d; }
 .theme-option[data-theme="spaceheavy"] { background: #8a2a3a; color: #ece6f0; }
 .theme-option[data-theme="theglow"] { background: #05273d; color: #ded3ab; }
+.theme-option[data-theme="worldsfair"] { background: #113e44; color: #aab7cc; }
 
 /* ==============================
    GLOBAL STYLES
