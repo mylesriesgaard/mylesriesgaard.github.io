@@ -27,32 +27,6 @@
   --color-titlebar-end: #5c9e6b;
 }
 
-/* Spring Bloom */
-.theme-springbloom {
-  --color-bg-main: #a6d5a8;
-  --color-bg-window: #e1f3da;
-  --color-bg-panel: #f6f9f1;
-  --color-bg-hover: #fffdf8;
-  --color-bg-active: #cfe9c9;
-  --color-bg-scrollbar-track: #ffffff;
-
-  --color-text-main: #2a392a;
-  --color-text-muted: #4c594c;
-  --color-text-link: #d673a2;
-  --color-text-link-hover: #000000;
-  --color-text-inverse: #ffffff;
-  --color-text-category: #3d4b3d;
-
-  --color-border-light: #ffffff;
-  --color-border-medium: #b8d8b9;
-  --color-border-dark: #5e785e;
-  --color-border-highlight: #fff;
-
-  --color-titlebar-text: #fff;
-  --color-titlebar-start: #7cc489;
-  --color-titlebar-end: #e89bb0;
-}
-
 /* Windows 95 */
 .theme-windows95 {
   --color-bg-main: #008080;
@@ -77,32 +51,6 @@
   --color-titlebar-text: #ffffff;
   --color-titlebar-start: #000080;
   --color-titlebar-end: #1084d0;
-}
-
-/* Amber Terminal */
-.theme-amberterminal {
-  --color-bg-main: #000000;
-  --color-bg-window: #1a0f00;
-  --color-bg-panel: #261700;
-  --color-bg-hover: #332000;
-  --color-bg-active: #140c00;
-  --color-bg-scrollbar-track: #000000;
-
-  --color-text-main: #ffb000;
-  --color-text-muted: #cc8a00;
-  --color-text-link: #ffcc33;
-  --color-text-link-hover: #ffffff;
-  --color-text-inverse: #000000;
-  --color-text-category: #996600;
-
-  --color-border-light: #ffcc33;
-  --color-border-medium: #b37700;
-  --color-border-dark: #4d3300;
-  --color-border-highlight: #ffb000;
-
-  --color-titlebar-text: #ffcc33;
-  --color-titlebar-start: #664000;
-  --color-titlebar-end: #664000;
 }
 
 /* Ocean Breeze */
@@ -157,6 +105,196 @@
   --color-titlebar-end: #ff6d00;
 }
 
+/* Lavender Town */
+.theme-lavendertown {
+  --color-bg-main: #b8a0d6;
+  --color-bg-window: #eae3f2;
+  --color-bg-panel: #f0ebf9;
+  --color-bg-hover: #d5c5eb;
+  --color-bg-active: #b49ad9;
+  --color-bg-scrollbar-track: #ffffff;
+
+  --color-text-main: #2f2c4a;
+  --color-text-muted: #726d96;
+  --color-text-link: #9b6bbb;
+  --color-text-link-hover: #73488f;
+  --color-text-inverse: #ffffff;
+  --color-text-category: #7c6c8a;
+
+  --color-border-light: #ffffff;
+  --color-border-medium: #a8a3c4;
+  --color-border-dark: #3d3b60;
+  --color-border-highlight: #fff;
+
+  --color-titlebar-text: #ffffff;
+  --color-titlebar-start: #9b6bbb;
+  --color-titlebar-end: #6e4a8c;
+}
+
+/* Aftersun */
+.theme-aftersun {
+  --color-bg-main: linear-gradient(180deg, #2f607d 0%, #73c4d6 60%, #f7e8cf 100%);
+  --color-bg-window: #f7e8cf;
+  --color-bg-panel: #f0e3d4;
+  --color-bg-hover: #e6d7c4;
+  --color-bg-active: #d6c6b3;
+  --color-bg-scrollbar-track: #ffffff;
+
+  --color-text-main: #2f2c28;
+  --color-text-muted: #6a645d;
+  --color-text-link: #3aa8b7;
+  --color-text-link-hover: #277983;
+  --color-text-inverse: #ffffff;
+  --color-text-category: #4a4641;
+
+  --color-border-light: #ffffff;
+  --color-border-medium: #d1c5b6;
+  --color-border-dark: #3a352f;
+  --color-border-highlight: #fff;
+
+  --color-titlebar-text: #ffffff;
+  --color-titlebar-start: #2f607d;
+  --color-titlebar-end: #2f607d;
+}
+
+/* Her */
+.theme-her {
+    --color-bg-main: #5c2c28;
+  --color-bg-window: #e8cbb8;
+  --color-bg-panel: #f0d6c1;
+  --color-bg-hover: #f4c1a6;
+  --color-bg-active: #e8cbb8;
+  --color-bg-scrollbar-track: #f0d6c1;
+
+  --color-text-main: #5c2c28;
+  --color-text-muted: #9c5a50;
+  --color-text-link: #c54737;
+  --color-text-link-hover: #e6392b;
+  --color-text-inverse: #ffffff;     
+  --color-text-category: #b35c50;
+
+  --color-border-light: #ffffff;     
+  --color-border-medium: #9c524a;    
+  --color-border-dark: #4b1e1a;      
+  --color-border-highlight: #c54737;
+
+  --color-titlebar-text: #f4c1a6; 
+  --color-titlebar-start: #c54737;
+  --color-titlebar-end: #5c2c28;
+}
+
+.theme-bluevelvet {
+  --color-bg-main: #253a8a;
+  --color-bg-window: #cfd4f0;
+  --color-bg-panel: #c2c9e8;
+  --color-bg-hover: #b0b7dd;
+  --color-bg-active: #cfd4f0;
+  --color-bg-scrollbar-track: #f5f5f5;
+
+  --color-text-main: #1a1a2e;
+  --color-text-muted: #555a72;
+  --color-text-link: #4a7fff;
+  --color-text-link-hover: #3060d0;
+  --color-text-inverse: #ffffff;
+  --color-text-category: #7a80a0;
+
+  --color-border-light: #ffffff;
+  --color-border-medium: #a0a6c0;
+  --color-border-dark: #7a7fa0;
+  --color-border-highlight: #4a7fff;
+
+  --color-titlebar-text: #ffffff;    
+  --color-titlebar-start: #253a8a;
+  --color-titlebar-end: #4a7fff;
+}
+
+.theme-kimochiwarui {
+  --color-bg-main: linear-gradient(180deg, #10082c 60%, #232f84 100%);  
+  --color-bg-window: #e2dfea;    
+  --color-bg-panel: #d7cfe5;        
+  --color-bg-hover: #cbbfe0;       
+  --color-bg-active: #e2dfea;      
+  --color-bg-scrollbar-track: #f5f5f5;
+
+  --color-text-main: #10082c;    
+  --color-text-muted: #4a3f6b;    
+  --color-text-link: #eb2c30;     
+  --color-text-link-hover: #fc645d; 
+  --color-text-inverse: #ffffff;
+  --color-text-category: #6b5a8a; 
+
+  --color-border-light: #e2dfea;     
+  --color-border-medium: #a08abf;
+  --color-border-dark: #10082c;
+  --color-border-highlight: #eb2c30;
+
+  --color-titlebar-text: #ffffff;
+  --color-titlebar-start: #eb2c30;
+  --color-titlebar-end: #fc645d;
+}
+
+.theme-spaceheavy {
+  --color-bg-main: linear-gradient(180deg, #1c1c38 0%, #8a1c35 90%);
+  --color-bg-window: #6f5370;
+  --color-bg-panel: #5e4170;
+  --color-bg-hover: #72577d;
+  --color-bg-active: #8a2a3a;
+  --color-bg-scrollbar-track: #f5f0f5;
+
+  --color-text-main: #ece6f0;
+  --color-text-muted: #b8a8b8;
+  --color-text-link: #f3a8a0;       
+  --color-text-link-hover: #e18a88;
+  --color-text-inverse: #000000;
+  --color-text-category: #c496b0; 
+
+  --color-border-light: #b8a8b8;
+  --color-border-medium: #8a6a8a;  
+  --color-border-dark: #4a2a4a;
+  --color-border-highlight: #f3a8a0;
+
+  --color-titlebar-text: #ffffff;
+  --color-titlebar-start: #8a2a3a;
+  --color-titlebar-end: #8a1c35; 
+}
+
+.theme-theglow {
+  --color-bg-main: #05273d;
+
+  --color-bg-window: #c9bb92;     
+  --color-bg-panel: #ded3ab;      
+  --color-bg-hover: #e6deb0;   
+  --color-bg-active: #c9bb92;  
+  --color-bg-scrollbar-track: #f5f5f5;
+
+  --color-text-main: #05273d;      
+  --color-text-muted: #7a6f57;  
+  --color-text-link: #ad3e29;     
+  --color-text-link-hover: #c43828;  
+  --color-text-inverse: #ffffff;
+  --color-text-category: #9e8e6e;  
+
+  --color-border-light: #ffffff;
+  --color-border-medium: #b0a37f; 
+  --color-border-dark: #5a4e37;   
+  --color-border-highlight: #ad3e29;
+
+  --color-titlebar-text: #ffffff;
+  --color-titlebar-start: #ad3e29; 
+  --color-titlebar-end: #c43828;    
+}
+
+.theme-option[data-theme="default"] { background: #7a8f7a; color: #fff; }
+.theme-option[data-theme="windows95"] { background: #008080; color: #fff; }
+.theme-option[data-theme="oceanbreeze"] { background: #5f9ea0; color: #2f4f4f; }
+.theme-option[data-theme="eternalsunshine"] { background: #89cfff; color: #1f2a33; }
+.theme-option[data-theme="lavendertown"] { background: #b8a0d6; color: #2f2c4a; }
+.theme-option[data-theme="aftersun"] { background: #e6d7c4; color: #3aa8b7; }
+.theme-option[data-theme="her"] { background: #5c2c28; color: #f4c1a6; }
+.theme-option[data-theme="bluevelvet"] { background: #253a8a; color: #cfd4f0; }
+.theme-option[data-theme="kimochiwarui"] { background: #232f85; color: #fc645d; }
+.theme-option[data-theme="spaceheavy"] { background: #8a2a3a; color: #ece6f0; }
+.theme-option[data-theme="theglow"] { background: #05273d; color: #ded3ab; }
 
 /* ==============================
    GLOBAL STYLES
@@ -171,6 +309,10 @@
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  height: 100%;
 }
 
 body {
@@ -370,6 +512,8 @@ button {
   display: none;
   position: absolute;
 
+  width: 150px;
+
   top: 18px;
   right: 0;
 
@@ -384,7 +528,6 @@ button {
 
   padding: 4px;
   z-index: 200;
-  border-radius: 0;
 }
 
 .theme-option {
@@ -401,12 +544,14 @@ button {
   border-radius: 0;
 }
 
-.theme-option[data-theme="default"] { background: #7a8f7a; color: #fff; }
-.theme-option[data-theme="springbloom"] { background: #a6d5a8; color: #2a392a; }
-.theme-option[data-theme="windows95"] { background: #008080; color: #fff; }
-.theme-option[data-theme="amberterminal"] { background: #000000; color: #ffb000; }
-.theme-option[data-theme="oceanbreeze"] { background: #5f9ea0; color: #2f4f4f; }
-.theme-option[data-theme="eternalsunshine"] { background: #89cfff; color: #1f2a33; }
+.theme-dropdown-header {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--color-text-main);
+  margin: 0;
+  padding-left: 3px;
+  text-align: left;
+}
 
 
 /* ==============================
