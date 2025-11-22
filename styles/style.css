@@ -244,7 +244,7 @@
   --color-bg-window: #6f5370;
   --color-bg-panel: #5e4170;
   --color-bg-hover: #72577d;
-  --color-bg-active: #8a2a3a;
+  --color-bg-active: #573f5a;
   --color-bg-scrollbar-track: #f5f0f5;
 
   --color-text-main: #ece6f0;
@@ -291,19 +291,19 @@
 }
 
 .theme-worldsfair {
-  --color-bg-main: linear-gradient(180deg, #113e44 0%, #00030a 100%);
+  --color-bg-main: linear-gradient(180deg, #113e44 70%, #00030a 100%);
   --color-bg-window: #0e1820;   
   --color-bg-panel: #1a2430;      
   --color-bg-hover: #223041;     
   --color-bg-active: #16212d;
   --color-bg-scrollbar-track: #0a0f15;
 
-  --color-text-main: #aab7cc;   
-  --color-text-muted: #6e7c8f;      
-  --color-text-link: #3b52bc;  
-  --color-text-link-hover: #6c7cff;
+  --color-text-main: #c7d4e6;   
+  --color-text-muted: #8795a6;      
+  --color-text-link: #5874ff;  
+  --color-text-link-hover: #8ea1ff;
   --color-text-inverse: #ffffff;
-  --color-text-category: #9b4ea0;
+  --color-text-category: #b976c7;
 
   --color-border-light: #3b52bc; 
   --color-border-medium: #20364e;
@@ -326,7 +326,7 @@
 .theme-option[data-theme="kimochiwarui"] { background: #232f85; color: #fc645d; }
 .theme-option[data-theme="spaceheavy"] { background: #8a2a3a; color: #ece6f0; }
 .theme-option[data-theme="theglow"] { background: #05273d; color: #ded3ab; }
-.theme-option[data-theme="worldsfair"] { background: #113e44; color: #aab7cc; }
+.theme-option[data-theme="worldsfair"] { background: #113e44; color: #c7d4e6; }
 
 /* ==============================
    GLOBAL STYLES
