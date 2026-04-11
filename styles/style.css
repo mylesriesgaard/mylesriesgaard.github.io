@@ -947,6 +947,10 @@ footer p {
   border-left-color: var(--color-border-light);
 }
 
+.project-media lite-youtube {
+  height: auto;
+}
+
 .project-media iframe.vimeo-embed {
   width: 100%;
   aspect-ratio: 16/9;

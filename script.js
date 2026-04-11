@@ -61,19 +61,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!buttons.length || !projects.length) return;
 
-    const filterAttr = projects[0].hasAttribute('data-category') ? 'data-category' :
-                       projects[0].hasAttribute('data-role') ? 'data-role' : null;
+    // Detect which attribute the page uses
+    const filterAttr = projects[0].hasAttribute('data-category')
+        ? 'data-category'
+        : projects[0].hasAttribute('data-role')
+        ? 'data-role'
+        : null;
 
     if (!filterAttr) return;
 
+    // GROUPS
+    const roleGroups = {
+        sound: ['sound mixer', 'boom operator'],
+        music: ['composer']
+    };
+
     let validFilters;
+
     if (filterAttr === 'data-category') {
-        validFilters = ['animation', 'design', 'film', 'programming', 'all'];
+        // Programming page
+        validFilters = ['animation', 'design', 'programming', 'all'];
+
     } else {
-        validFilters = ['composer', 'sound mixer', 'boom operator', 'all'];
+        // Film page
+        validFilters = ['sound', 'music', 'other', 'all'];
     }
 
     function applyFilter(filter, updateURL = true) {
+        // Update active button
         buttons.forEach(b => {
             b.classList.toggle('active', b.getAttribute('data-filter') === filter);
         });
@@ -83,13 +98,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 .split(',')
                 .map(v => v.trim().toLowerCase());
 
-            if (filter === 'all' || values.includes(filter)) {
-                proj.style.display = 'block';
+            let match = false;
+
+            if (filter === 'all') {
+                match = true;
+
+            } else if (filterAttr === 'data-category') {
+                // NORMAL FILTERING (projects page)
+                match = values.includes(filter);
+
             } else {
-                proj.style.display = 'none';
+                // GROUPED FILTERING (film page)
+
+                if (filter === 'other') {
+                    const knownRoles = [...roleGroups.sound, ...roleGroups.music];
+                    match = values.some(v => !knownRoles.includes(v));
+
+                } else {
+                    const groupRoles = roleGroups[filter] || [];
+                    match = values.some(v => groupRoles.includes(v));
+                }
             }
+
+            proj.style.display = match ? 'block' : 'none';
         });
 
+        // URL sync
         if (updateURL) {
             const url = new URL(window.location);
             if (filter === 'all') {
@@ -101,11 +135,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // INITIAL LOAD
     const params = new URLSearchParams(window.location.search);
-    const filterParam = params.get('filter') ? params.get('filter').toLowerCase() : 'all';
+    const filterParam = params.get('filter')?.toLowerCase() || 'all';
     const initialFilter = validFilters.includes(filterParam) ? filterParam : 'all';
+
     applyFilter(initialFilter, false);
 
+    // BUTTON EVENTS
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
             const filter = btn.getAttribute('data-filter').toLowerCase();
@@ -113,9 +150,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // BACK BUTTON SUPPORT
     window.addEventListener('popstate', e => {
         const filter = e.state?.filter || 'all';
         applyFilter(filter, false);
     });
 });
-
