@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // GROUPS
     const roleGroups = {
-        sound: ['sound mixer', 'boom operator'],
+        sound: ['sound mixer', 'sound designer', 'boom operator', 'sound designer'],
         music: ['composer']
     };
 
