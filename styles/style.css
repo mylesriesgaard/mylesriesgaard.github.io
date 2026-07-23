@@ -979,7 +979,7 @@ footer p {
   border-bottom: 1px solid var(--color-border-medium);
   padding: 2px 6px;
   font-size: 16px;
-  color: var(--color-text-category);
+  color: var(--color-text-muted);
   margin: 3px 0 6px 0;
   font-family: "W95FA", "MS Sans Serif", "Microsoft Sans Serif", Tahoma, sans-serif;
 }
