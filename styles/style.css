@@ -720,20 +720,20 @@ footer p {
 ============================== */
 
 .terminal-box {
-  background: var(--color-bg-window);
-  border: 2px solid var(--color-border-dark);
+  background: var(--color-border-dark);
+  border: 2px solid var(--color-border-medium);
   border-top-color: var(--color-border-light);
   border-left-color: var(--color-border-light);
   padding: 10px;
   margin-bottom: 15px;
   color: var(--color-text-main);
-  box-shadow: inset -1px -1px var(--color-border-medium),
-              inset 1px 1px var(--color-border-highlight);
   min-height: 50px;
 }
 
 .terminal-text {
   white-space: pre-wrap;
+  color: var(--color-border-light);
+  font-style: italic;
 }
 
 .terminal-text::after {
