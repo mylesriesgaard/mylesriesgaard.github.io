@@ -368,7 +368,7 @@ body {
   font-size: 18px;
 }
 
-h1 { font-size: 30px; }
+h1 { font-size: 32px; }
 h2 { font-size: 26px; }
 h3 { font-size: 22px; }
 p, li, a { font-size: 20px; }
@@ -648,7 +648,7 @@ button {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 32px;
   margin: 0;
 }
 
@@ -1146,7 +1146,7 @@ lite-youtube {
 @media (max-width: 500px) {
 
   #navbar a {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   footer {
