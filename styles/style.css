@@ -369,7 +369,7 @@ body {
 }
 
 h1 { font-size: 32px; }
-h2 { font-size: 26px; }
+h2 { font-size: 32px; }
 h3 { font-size: 22px; }
 p, li, a { font-size: 20px; }
 
@@ -410,6 +410,50 @@ button {
 .project-media video {
   max-width: 100%;
   margin: 8px;
+}
+
+.expandable-image {
+  cursor: zoom-in;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.image-lightbox.is-open {
+  display: flex;
+}
+
+.image-lightbox-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.image-lightbox-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
 }
 
 /* ==============================
@@ -648,7 +692,7 @@ button {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 40px;
   margin: 0;
 }
 
@@ -826,7 +870,7 @@ footer p {
 .about-text h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .about-subtitle {
@@ -945,6 +989,20 @@ footer p {
   border: 2px solid var(--color-border-medium);
   border-top-color: var(--color-border-light);
   border-left-color: var(--color-border-light);
+}
+
+.wireframe-media img {
+  width: 70%;
+}
+
+.final-design-media {
+  align-items: stretch;
+}
+
+.final-design-media img {
+  flex: 1 1 0;
+  width: 0;
+  min-width: 0;
 }
 
 .project-media lite-youtube {
@@ -1132,6 +1190,19 @@ lite-youtube {
     height: auto;
     aspect-ratio: auto;
   }
+
+  .wireframe-media img {
+    width: 100%;
+  }
+
+  .final-design-media {
+    flex-direction: column;
+  }
+
+  .final-design-media img {
+    flex: 0 1 auto;
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1169,7 +1240,7 @@ lite-youtube {
 @media (max-width: 400px) {
 
   #navbar a {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .filter-btn { 
