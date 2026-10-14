@@ -1237,7 +1237,7 @@ lite-youtube {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
 
   #navbar a {
     font-size: 10px;
@@ -1256,5 +1256,9 @@ lite-youtube {
 
   .title-bar-text { 
     font-size: 14px;
+  }
+
+  h1 {
+    font-size: 32px;
   }
 }
