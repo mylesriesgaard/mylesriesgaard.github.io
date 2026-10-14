@@ -1253,4 +1253,8 @@ lite-youtube {
 
   .project-card { font-size: 14px;
   }
+
+  .title-bar-text { 
+    font-size: 14px;
+  }
 }
